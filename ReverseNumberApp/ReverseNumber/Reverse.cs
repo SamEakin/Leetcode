@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace ReverseNumber
+﻿namespace ReverseNumber
 {
-    class Reverse
+    public class Reverse
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Reverse a number!");
+        public static int Flip(int x) {
+            return x;
         }
     }
 }

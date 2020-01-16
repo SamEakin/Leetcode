@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using ReverseNumber;
 
 namespace Tests
 {
@@ -6,13 +7,25 @@ namespace Tests
     {
         [SetUp]
         public void Setup()
+        {}
+
+        [Test]
+        public void Test0()
         {
+            int input = 0;
+            int expected = 0;
+            int result = Reverse.Flip(input);
+            Assert.AreEqual(expected, result);
         }
 
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            int input = 1;
+            int expected = 1;
+            int result = Reverse.Flip(input);
+            Assert.AreEqual(expected, result);
         }
+
     }
 }
